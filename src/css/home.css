@@ -1,0 +1,347 @@
+/*------------------------------------------*/
+/*       Importing the 'Poppins' font       */
+/*------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*------------------------------------------*/
+/*          universal configuration         */
+/*------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------------------------------------------*/
+/*           tag body configuration         */
+/*------------------------------------------*/
+
+body {
+    display: flex;
+    width: 100vw;
+    flex-direction: column; 
+    overflow-x: hidden;
+    gap: 2rem;
+}
+
+/*------------------------------------------*/
+/*      Div company_logo configuration      */
+/*------------------------------------------*/
+
+#company_logo {
+    width: 100%;
+    height: 10vh; 
+    background-color: #1E1E1E;
+    display: flex; /*cria um flex container*/
+    align-items: center; /*centraliza os flex itens em relação ao main axis do pai*/
+    gap: 17px; /*distancia entre o h1 e a logo*/
+    padding-left: 200px; /*Cria um espaço entre os flex itens e a borda esquerda*/   
+    font-size: 11px;
+    font-family: Poppins;
+    color: #FFFFFF;
+    display: flex;
+   
+}
+
+/*------------------------------------------*/
+/*          "Contato" configuration         */
+/*------------------------------------------*/
+
+#company_logo a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 13px;
+    margin-left: 29rem;
+}
+
+/*------------------------------------------*/
+/*        Button "Sair" configuration       */
+/*------------------------------------------*/
+
+#header_button{
+    background-color: #FE8100;
+    color: #FFFFFF;
+    width: 115px;
+    height: 35px;
+    font-family: Poppins;
+    border-radius: 9px;
+    border: none;
+}
+
+/*------------------------------------------*/
+/*    Header Image and h2 configurations    */
+/*------------------------------------------*/
+
+#header_house{
+    color: #3c3c3c;
+    background-image: url('/src/images/home_house.png');
+    width: 100vw;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-left: 13rem;
+    padding-top: 8rem;
+    display: flex;
+    font-family: Poppins;
+    font-size: 20px;
+}
+
+/*------------------------------------------*/
+/*             Main configuration           */
+/*------------------------------------------*/
+
+main{
+    width: 100vw;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/*------------------------------------------*/
+/*         Div services configuration          */
+/*------------------------------------------*/
+
+#services{
+    width: 80%;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    overflow-x: hidden;
+    
+}
+
+/*------------------------------------------*/
+/*     Div Nossos_Serviços configuration    */
+/*------------------------------------------*/
+
+#Nossos_Serviços{
+    height: 26px;
+    font-family: Poppins;
+    color: #343434;
+    font-size: 25px;
+    padding-left: 4rem;
+}
+
+/*------------------------------------------*/
+/*          Div types configuration         */
+/*------------------------------------------*/
+
+#types{
+    width: 80vw;
+    height: 240px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*------------------------------------------*/
+/*       Div residenciais configuration     */
+/*------------------------------------------*/
+
+#residenciais{
+    height: 220px;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+#residenciais p{
+    font-family: Poppins;  
+}
+
+#residenciais img{
+    width: 160px;
+    height: 160px;
+}
+
+/*------------------------------------------*/
+/*       Div comerciais configuration       */
+/*------------------------------------------*/
+
+#comerciais{
+    height: 220px;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+#comerciais p{
+    font-family: Poppins;
+}
+
+#comerciais img{
+    width: 160px;
+    height: 160px;
+}
+
+/*------------------------------------------*/
+/*         Div Hoteis configuration         */
+/*------------------------------------------*/
+
+#hoteis{
+    height: 220px;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+#hoteis p{
+    font-family: Poppins;
+}
+
+#hoteis img{
+    width: 160px;
+    height: 160px;
+}
+
+/*------------------------------------------*/
+/*         Div offers configuration         */
+/*------------------------------------------*/
+
+#offers{
+    width: 80%;
+    height: 624px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/*------------------------------------------*/
+/*       Div opportunities configuration    */
+/*------------------------------------------*/
+
+#opportunities{
+    font-family: Poppins;
+    font-size: 24px;
+    height: 36px;
+    color: #343434;
+    padding-left: 4rem;
+}
+
+/*------------------------------------------*/
+/*   Div properties_options configuration   */
+/*------------------------------------------*/
+
+#properties_options{
+    height: 620px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 4rem;
+    
+}
+
+/*------------------------------------------*/
+/*        class properties configuration    */
+/*------------------------------------------*/
+
+.properties{
+    height: 290px;
+    width: 263px;
+    display: flex;
+    flex-direction: column;
+}
+
+.properties img{
+    width: 220px;
+}
+
+.properties h3{
+    font-family: Poppins;
+    color: #343434;
+}
+
+.properties p{
+    font-family: Poppins;
+    color: #848383;
+    font-size: 15px;
+}
+
+.properties button{
+    font-family: Poppins;
+    color: #E9ECF2;
+    background-color: #FE8100;
+    border-radius: 7px;
+    width: 90px;
+    height: 30px;
+}
+
+.property-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 0.5rem; 
+}
+
+/*------------------------------------------*/
+/*            footer configuration          */
+/*------------------------------------------*/
+
+footer{
+    height: 250px;
+    background-color: #1E1E1E;
+    font-family: Poppins;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*------------------------------------------*/
+/*          Div contact configuration        */
+/*------------------------------------------*/
+
+#contact{
+    width: 300px;
+    height: 250px;
+    font-family: Poppins;
+    margin-left: 12.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#contact_phrase {
+    color: #FE8100;
+    font-size: 22px;
+    font-family: Poppins;   
+}
+
+#owner_contact{
+    font-family: Poppins;
+    color: #E9ECF2;
+}
+
+#social_media img{
+    width: 25px;
+    height: 25px;
+}
+
+/*------------------------------------------*/
+/*          Div owner configuration         */
+/*------------------------------------------*/
+
+#owner{
+    font-family: Poppins;
+    color: #E9ECF2;
+    align-self: flex-end;
+    margin: 0px 19rem 1.9rem 0px;
+    font-size: 13px;
+}
+
+/*------------------------------------------*/
+/*      Div footer_button configuration     */
+/*------------------------------------------*/
+
+#footer_button{
+    align-self: flex-end;
+    padding-right: 4rem; 
+    padding-bottom: 1rem;
+}

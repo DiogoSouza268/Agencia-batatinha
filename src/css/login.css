@@ -1,0 +1,157 @@
+/*------------------------------------------*/
+/*       Importing the 'Poppins' font       */
+/*------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*------------------------------------------*/
+/*           tag Body configuration         */
+/*------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------------------------------------------*/
+/*            Header configuration          */
+/*------------------------------------------*/
+
+header {
+    width: 100%;
+    height: 65px; 
+    background-color: #1E1E1E;
+    display: flex; /*cria um flex container*/
+    align-items: center; /*centraliza os flex itens em relação ao main axis do pai*/
+    gap: 11px; /*distancia entre o h1 e a logo*/
+    padding-left: 200px; /*Cria um espaço entre os flex itens e a borda esquerda*/
+    
+}
+
+/*-------------------------------------------*/
+/*   "Agencia batatinha (h1) configuration   */
+/*-------------------------------------------*/
+
+header h1 {
+    font-family: Poppins;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+/*-------------------------------------------*/
+/*             Main configuration            */
+/*-------------------------------------------*/
+
+main {
+    width: 100%;
+    height: calc(100vh - 65px); /* espaço restante da tela */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*--------------------------------------------------*/
+/*                House with message                */            
+/*--------------------------------------------------*/
+
+#fhouse{
+    width: 413px;
+    height: 503px;
+    background-image: url("../images/House.png");
+    color: #E9ECF2;
+    font-family: Poppins;
+    padding: 3rem 0px 0px 2rem ;
+    font-size: 18px;       
+}
+
+/*--------------------------------------------------*/
+/*       Fill out the form Configuration            */            
+/*--------------------------------------------------*/
+
+#login_interface {
+    width: 390px;
+    height: 503px;
+    border: 4px solid #F2F4F4;
+    border-radius:20px;
+    font-family: Poppins;
+    color: #343434;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; 
+    align-items: center;
+     
+}
+
+/*--------------------------------------------------*/
+/*   "Entre com seu email e senha" Configuration    */            
+/*--------------------------------------------------*/
+
+#login_interface h3 {
+    padding-top: 2rem;
+    font-size: 24px;
+    padding-bottom: 1rem;
+}
+
+/*--------------------------------------------------*/
+/*     Inputs and button "Enviar" configuration     */            
+/*--------------------------------------------------*/
+
+.userdata {
+    border-radius: 20px;
+    border: 1px solid #D8D8D8;
+    height: 43px;
+    width: 18rem;
+    background-color: #F2F4F4;
+    font-family: Poppins;
+    padding-left: 1rem;
+    margin-left: 2rem;
+
+}
+
+#button_enviar{
+    background-color: #FE8100;
+    font-family: Poppins;
+    border-radius: 20px;
+    border: 1px solid #D8D8D8;
+    height: 43px;
+    width: 18rem;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    align-items: center;
+    color: #FFFFFF;   
+}
+
+/*--------------------------------------------------*/
+/*    "Não possui uma conta? Cria Configuration"    */            
+/*--------------------------------------------------*/
+
+#login_interface p {
+    font-size: 11px;
+    padding: 1rem 0px 1rem 0px;
+}
+
+#login_interface a {
+    color: #FE8100;
+}
+
+/*--------------------------------------------------*/
+/*               Lines Configurations               */            
+/*--------------------------------------------------*/
+
+#userline{
+    width: 280px;
+    margin-left: 1rem;
+    border: 1px solid #D8D8D8;
+    
+}
+
+#centerline{
+    height: 503px;
+    border: 1px solid #D8D8D8;
+}
+
+/*  Sua senha deve ter no minimo 8 caracteres     */
+/*  Email ou senha inválidos  */
+/*  Todos os compos são obrigatórios */
+/*  Dados Ok    */
