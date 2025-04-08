@@ -207,83 +207,78 @@ main{
     width: 160px;
     height: 160px;
 }
-
 /*------------------------------------------*/
-/*         Div offers configuration         */
+/*   Melhores Oportunidades configuration   */
 /*------------------------------------------*/
-
-#offers{
-    width: 80%;
-    height: 624px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-/*------------------------------------------*/
-/*       Div opportunities configuration    */
-/*------------------------------------------*/
-
 #opportunities{
     font-family: Poppins;
-    font-size: 24px;
-    height: 36px;
-    color: #343434;
-    padding-left: 4rem;
+    font-size: 23px;
+    padding-left: 12rem;
+}
+#property-list {
+    display: flex;                  
+    flex-wrap: wrap;                
+    justify-content: flex-start; 
+    padding: 20px;                  
 }
 
-/*------------------------------------------*/
-/*   Div properties_options configuration   */
-/*------------------------------------------*/
-
-#properties_options{
-    height: 620px;
+#property-list li {
+    flex: 1 1 25%;     
+    box-sizing: border-box;        
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-left: 4rem;
-    
+    justify-content: center;       
+    align-items: center;            
 }
 
-/*------------------------------------------*/
-/*        class properties configuration    */
-/*------------------------------------------*/
-
-.properties{
-    height: 290px;
-    width: 263px;
-    display: flex;
-    flex-direction: column;
+#property-list li article {
+    width: 100%;
+    padding: 10px;                 
+    border-radius: 10px;
+    text-align: center;
+    margin: 0;
 }
 
-.properties img{
-    width: 220px;
+#property-list li article img {
+    width: 100%;
+    max-width: 180px;             
+    height: auto;
+    margin-bottom: 10px;
 }
 
-.properties h3{
-    font-family: Poppins;
+#property-list li article h3 {
+    font-size: 18px;
+    font-weight: bold;
     color: #343434;
+    margin-right: 4rem;
+    font-family: Poppins;
+
 }
 
-.properties p{
-    font-family: Poppins;
-    color: #848383;
+#property-list li article p {
     font-size: 15px;
-}
-
-.properties button{
+    color: #343434;
+    margin-right: 8.5rem;
     font-family: Poppins;
-    color: #E9ECF2;
-    background-color: #FE8100;
-    border-radius: 7px;
-    width: 90px;
-    height: 30px;
+
 }
 
 .property-buttons {
     display: flex;
-    gap: 1rem;
-    margin-top: 0.5rem; 
+    justify-content: flex-start;
+    margin-top: 10px;
+    gap: 10px;
+    margin-left: 50px;
+    font-family: Poppins;
+}
+
+.property-buttons button {
+    background-color: #FE8100;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 10px;
+    font-family: Poppins;
 }
 
 /*------------------------------------------*/
@@ -292,6 +287,7 @@ main{
 
 footer{
     height: 250px;
+    width: 100%;
     background-color: #1E1E1E;
     font-family: Poppins;
     display: flex;
@@ -361,37 +357,92 @@ footer{
 /*             Modal configuration          */
 /*------------------------------------------*/
 
+/*------------------------------------------*/
+/* Modal configuration                  */
+/*------------------------------------------*/
+
 .modal {
     display: none; /* Inicialmente oculto */
-    position: fixed;
+    position: fixed; /* Fica fixo na tela */
     z-index: 1; /* Fica em cima de outros elementos */
     left: 0;
     top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    overflow: auto; /* Habilita scroll se o conteúdo for grande */
     background-color: rgba(0, 0, 0, 0.4); /* Fundo semi-transparente */
 }
 
 .modal-content {
-    background-color: white;
-    margin: 15% auto;
+    background-color: #fefefe;
+    margin: 15% auto; /* Centraliza verticalmente e horizontalmente */
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
+    width: 80%; /* Largura do conteúdo do modal */
+    max-width: 600px; /* Largura máxima do conteúdo */
+    border-radius: 10px;
+    position: relative; /* Para posicionar o botão de fechar */
 }
 
 .close {
     color: #aaa;
-    float: right;
+    position: absolute;
+    top: 10px;
+    right: 15px;
     font-size: 28px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
     color: black;
     text-decoration: none;
+}
+
+#modal-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover; /* Mantém a proporção da imagem */
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+#modal-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FE8100;
+    margin-bottom: 10px;
+}
+
+#modal-area,
+#modal-rooms,
+#modal-bathrooms,
+#modal-address,
+#modal-description {
+    font-size: 16px;
+    color: #343434;
+    margin-bottom: 8px;
+}
+
+.modal-actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.modal-actions button {
+    background-color: #FE8100;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Poppins;
     cursor: pointer;
+}
+
+.modal-actions button:hover {
+    background-color: #d66f00;
 }

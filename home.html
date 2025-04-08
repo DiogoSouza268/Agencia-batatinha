@@ -27,6 +27,7 @@
     </header>
 
     <main>
+
         <div id="services">
             
             <div id="Nossos_Serviços">Nossos Serviços</div>
@@ -62,134 +63,29 @@
             </div>
         </div>
 
-        <div id="offers">
 
+        <section id="offers">
             <div id="opportunities">Melhores oportunidades</div>
-
-            <div id="properties_options">
-
-                <div class="properties" onclick="openModal('1')" onmouseleave="closeModal()">
-
-                    <img src="/src/images/properties1.png" alt="first property">
-                    <h3>R$ 2.000.000</h3>
-                    <p>132 m²</p>
-
-                    <div class="property-buttons">
-                        <button disabled="disabled">5 quartos</button>
-                        <button disabled="disabled">4 banheiros</button>
-                    </div>
         
+            <ul id="property-list">
+                <!-- Propriedades serão inseridas aqui dinamicamente -->
+            </ul>
+        </section>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img id="modal-image" src="" alt="Imagem da Propriedade">
+                <h3 id="modal-price"></h3>
+                <p id="modal-area"></p>
+                <p id="modal-rooms"></p>
+                <p id="modal-bathrooms"></p>
+                <div class="modal-actions">
+                    <button onclick="window.location.href = '/error.html'">Comprar</button>
                 </div>
-                    
-                <div class="properties">
-
-                    <img src="/src/images/properties2.png" alt="second property">
-                    <h3>R$ 2.750.000</h3>
-                    <p>112 m²</p>
-
-                    <div class="property-buttons">
-                        <button disabled="disabled">5 quartos</button>
-                        <button disabled="disabled">3 banheiros</button>
-                    </div>
-
-                </div>
-
-                <div class="properties">
-
-                    <img src="/src/images/properties3.png" alt="Third property">
-                    <h3>R$ 1.400.000</h3>
-                    <p>223 m²</p>
-
-                    <div class="property-buttons">
-                        <button disabled="disabled">4 quartos</button>
-                        <button disabled="disabled">4 banheiros</button>
-
-                    </div>
-                </div>
-
-                <div class="properties">
-
-                    <img src="/src/images/properties4.png" alt="Fourth property">
-                    <h3>R$ 1.200.000</h3>
-                    <p>92 m²</p>
-
-                    <div class="property-buttons">
-                        <button disabled="disabled">4 quartos</button>
-                        <button disabled="disabled">3 banheiros</button>
-                    </div>
-
-                </div>
-
-                <div class="properties">
-
-                    <img src="/src/images/properties5.png" alt="Fifth property">
-                    <h3>R$ 3.500.000</h3>
-                    <p>341 m²</p>
-
-                    <div class="property-buttons">
-                        <button disabled="disabled">7 quartos</button>
-                        <button disabled="disabled">6 banheiros</button>
-                    </div>
-
-                </div>
-
-                <div class="properties">
-
-                    <img src="/src/images/properties6.png" alt="Sixth property">
-                    <h3>R$ 2.460.000</h3>
-                    <p>149 m²</p>
-
-                    <div class="property-buttons">
-                        <button disabled="disabled">5 quartos</button>
-                        <button disabled="disabled">4 banheiros</button>
-                    </div>
-
-                </div>
-
-                <div class="properties">
-
-                    <img src="/src/images/properties7.png" alt="Seventh property">
-                    <h3>R$ 2.200.000</h3>
-                    <p>232 m²</p>
-
-                    <div class="property-buttons">
-                        <button disabled="disabled">5 quartos</button>
-                        <button disabled="disabled">5 banheiros</button>
-                    </div>
-
-                </div>
-
-                <div class="properties">
-
-                    <img src="/src/images/properties8.png" alt="Eighth property">
-                    <h3>R$ 3.100.000</h3>
-                    <p>132 m²</p>
-
-                    <div class="property-buttons">
-                        <button disabled="disabled">6 quartos</button>
-                        <button disabled="disabled">5 banheiros</button>
-                    </div>
-                </div>
-
             </div>
-
         </div>
-    
-    </main>
 
-      <!-- Modal -->
-      <div id="modal" class="modal" onclick="closeModal()">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <h2>Detalhes do Imóvel</h2>
-            <img id="modal-image" src="" alt="Imagem do Imóvel" />
-            <p><strong>Preço:</strong> <span id="modal-price"></span></p>
-            <p><strong>Área:</strong> <span id="modal-area"></span></p>
-            <p><strong>Quartos:</strong> <span id="modal-rooms"></span></p>
-            <p><strong>Banheiros:</strong> <span id="modal-bathrooms"></span></p>
-        </div>
-    </div>
-</main>
     <footer>
         <div id="contact">
 
