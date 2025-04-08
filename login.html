@@ -21,12 +21,18 @@
         <form id="login_interface">
             <h3>Entre com seu email <br>e senha</h3>
             
-            <input type="text" placeholder="Email" class="userdata">
-            <input type="text" placeholder="Senha" class="userdata">
-            <input type="button" value="Enviar" id="button_enviar">
+            <input type="email" placeholder="Email" class="userdata" id="Email" required>
+            <input type="password" placeholder="Senha" class="userdata" id="Password">
 
+            <div id="login">
+                <span id="login_correct"></span>
+                <span id="login_wrong"></span>
+            </div>
+            
+
+            <input type="submit" value="Enviar" id="button_enviar" onclick="toHome(); return false">
             <hr id="userline">
-            <p>Não possui uma conta? <a href="">Criar</a></p>
+            <p>Não possui uma conta? <a href="/error.html">Criar</a></p>
         </form>
 
         <hr id="centerline">
@@ -36,10 +42,7 @@
 
         </div>
 
-        
-        
     </main>
-
 
     <script src="./src/script/login.js"></script>
 </body>

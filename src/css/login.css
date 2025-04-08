@@ -80,7 +80,6 @@ main {
     flex-direction: column;
     gap: 2rem; 
     align-items: center;
-     
 }
 
 /*--------------------------------------------------*/
@@ -93,20 +92,44 @@ main {
     padding-bottom: 1rem;
 }
 
-/*--------------------------------------------------*/
-/*     Inputs and button "Enviar" configuration     */            
-/*--------------------------------------------------*/
+/*-------------------------------------------------------*/
+/*     Inputs, span andbutton "Enviar" configuration     */            
+/*-------------------------------------------------------*/
 
 .userdata {
     border-radius: 20px;
     border: 1px solid #D8D8D8;
-    height: 43px;
+    height: 80px;
     width: 18rem;
     background-color: #F2F4F4;
     font-family: Poppins;
     padding-left: 1rem;
     margin-left: 2rem;
+}
 
+#login{
+    height: 28px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+#login_correct{
+    font-family: Poppins;
+    font-size: 11px;
+    color: #00E749;
+    height: 13px;
+    
+    
+}
+
+#login_wrong{
+    color: #E70000;
+    font-family: Poppins;
+    font-size: 11px;   
+    height: 13px;
+    
 }
 
 #button_enviar{
@@ -114,10 +137,10 @@ main {
     font-family: Poppins;
     border-radius: 20px;
     border: 1px solid #D8D8D8;
-    height: 43px;
+    height: 80px;
     width: 18rem;
     margin-left: 2rem;
-    margin-top: 1rem;
+    
     align-items: center;
     color: #FFFFFF;   
 }

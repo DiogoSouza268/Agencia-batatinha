@@ -63,14 +63,17 @@ main{
     justify-content: space-around;
 }
 
+main img{
+    width: 40%;
+    height: 85%;
+}
 /*-------------------------------------------*/
 /*        error_alert connfiguration         */
 /*-------------------------------------------*/
 
 #error_alert{
-    width: 470px;
-    height: 310px;
-    
+    width: 490px;
+    height: 320px;
     padding-left: 1rem;
     margin-left: 5rem;
 }
@@ -80,12 +83,12 @@ main{
 /*----------------------------------------------------------------------------------*/
 
 #message1{
-    font-size: 28px;
+    font-size: 30px;
     color: #FE8100;
 }
 
 #message2{
-    font-size: 10px;
+    font-size: 13px;
     color: #848383;
 }
 

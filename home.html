@@ -14,8 +14,8 @@
 
             <img src="./src/images/Logo.png" alt="Company Logo" >
             <h1>Agência batatinha</h1>
-            <a href="">Contato</a>
-            <input type="button" value="Sair" id="header_button">            
+            <a href="#contact">Contato</a>
+            <button type="button" id="header_button" onclick="exit()">Sair</button>       
 
         </div>
 
@@ -37,7 +37,7 @@
                 <div id="residenciais">
 
                     <img src="./src/images/residenciais.png" alt="Residential properties">
-                    <p style="color: #343434; font-size: 18px;">Residenciais</p>
+                    <a href="/error.html"><p style="color: #343434; font-size: 18px;">Residenciais</p></a>
                     <p style="color: #848383; font-size: 13px;">123 Ofertas</p>
                 
                 </div>
@@ -45,7 +45,7 @@
                 <div id="comerciais">
 
                     <img src="./src/images/Comerciais.png" alt="Commercial properties">
-                    <p style="color: #343434; font-size: 18px;">Comerciais</p>
+                    <a href="/error.html"><p style="color: #343434; font-size: 18px;">Comerciais</p></a>
                     <p style="color: #848383; font-size: 13px;">93 Ofertas</p>
                 
                 </div>
@@ -54,7 +54,7 @@
                 <div id="hoteis">
 
                     <img src="/src/images/hoteis.png" alt="Hotel properties">
-                    <p style="color: #343434; font-size: 18px;">Hoteis</p>
+                    <a href="/error.html"><p style="color: #343434; font-size: 18px;">Hoteis</p></a>
                     <p style="color: #848383; font-size: 13px;">23 Ofertas</p>
 
                 </div>
@@ -68,7 +68,7 @@
 
             <div id="properties_options">
 
-                <div class="properties">
+                <div class="properties" onclick="openModal('1')" onmouseleave="closeModal()">
 
                     <img src="/src/images/properties1.png" alt="first property">
                     <h3>R$ 2.000.000</h3>
@@ -177,6 +177,19 @@
     
     </main>
 
+      <!-- Modal -->
+      <div id="modal" class="modal" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Detalhes do Imóvel</h2>
+            <img id="modal-image" src="" alt="Imagem do Imóvel" />
+            <p><strong>Preço:</strong> <span id="modal-price"></span></p>
+            <p><strong>Área:</strong> <span id="modal-area"></span></p>
+            <p><strong>Quartos:</strong> <span id="modal-rooms"></span></p>
+            <p><strong>Banheiros:</strong> <span id="modal-bathrooms"></span></p>
+        </div>
+    </div>
+</main>
     <footer>
         <div id="contact">
 
@@ -202,22 +215,13 @@
         </div>
 
         <div id="owner">
-            <p>Feito com <3 por Fulando de tal - Todos os Direitos Reservados</p>
+            <p>Feito com <3 por Diogo Da Silva Souza - Todos os Direitos Reservados</p>
         </div>
 
-        <div id="footer_button">
-            <img src="./src/images/Back to top.png" alt="button_top">
-        </div>
+        <button type="button" id="footer_button" onclick="back_start()"></button>
 
     </footer>
-
-
-
-
-
-
-
-
+    
 
     <script src="./src/script/home.js"></script>
 </body>
