@@ -1,9 +1,13 @@
 /*------------------------------------------*/
-/*        header button configuration       */
+/* header button "SAIR" configuration       */
 /*------------------------------------------*/
 
 function exit(){
-    window.location.href = "/login.html" //envia devolta para login.html
+    location.href = "../../login.html"
+}
+
+function buy(){
+    location.href = "../pages/error.html"
 }
 
 /*------------------------------------------*/
@@ -23,7 +27,7 @@ function back_start() {
 
 // Função para carregar as propriedades dinamicamente do data.json
 function loadProperties() {
-    fetch('/data.json')  // Certifique-se de que o caminho está correto
+    fetch('../json/data.json')  // Certifique-se de que o caminho está correto
         .then(response => response.json())  // Converte a resposta em JSON
         .then(data => {
             const propertyList = document.getElementById('property-list');
@@ -52,7 +56,7 @@ window.onload = loadProperties;
 
 // Função para abrir o modal
 function openModal(propertyId) {
-    fetch('/data.json')
+    fetch('../json/data.json')
         .then(response => response.json())
         .then(data => {
             const propertyDetails = data.serviços.find(propriedade => propriedade.price === propertyId); // Busca a propriedade pelo preço (use um ID único se possível)

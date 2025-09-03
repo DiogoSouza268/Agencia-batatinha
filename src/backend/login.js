@@ -25,10 +25,9 @@ function toHome() {
 
         document.getElementById("login_correct").innerHTML = "Dados ok.";
         document.getElementById("login_wrong").innerHTML = "";
-        location.href = "home.html";
-        
-        setTimeout(function() {
-            location.href = "home.html"; // Redireciona para a página home
-        }, 600000)
+        location.href = "./src/pages/home.html";
     }
+        
 }
+
+    

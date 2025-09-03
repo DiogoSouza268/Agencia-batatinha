@@ -2,7 +2,7 @@
     "serviços": [
     {
 
-        "image":"/src/images/properties1.png",
+        "image":"../images/properties1.png",
         
         "price":"R$ 2.000.000",
         
@@ -16,7 +16,7 @@
     
     {
     
-        "image":"/src/images/properties2.png",
+        "image":"../images/properties2.png",
         
         "price":"R$ 2.700.000",
         
@@ -30,7 +30,7 @@
     
     {
     
-        "image":"/src/images/properties3.png",
+        "image":"../images/properties3.png",
         
         "price":"R$ 1.400.000",
         
@@ -44,7 +44,7 @@
     
     {
     
-        "image":"/src/images/properties4.png",
+        "image":"../images/properties4.png",
         
         "price":"R$ 1.200.000",
         
@@ -58,7 +58,7 @@
     
     {
     
-        "image":"/src/images/properties5.png",
+        "image":"../images/properties5.png",
         
         "price":"R$ 3.500.000",
         
@@ -72,7 +72,7 @@
     
     {
     
-        "image":"/src/images/properties6.png",
+        "image":"../images/properties6.png",
         
         "price":"R$ 2.460.000",
         
@@ -86,7 +86,7 @@
     
     {
     
-        "image":"/src/images/properties7.png",
+        "image":"../images/properties7.png",
         
         "price":"R$ 2.200.000",
         
@@ -100,7 +100,7 @@
     
     {
     
-        "image":"/src/images/properties8.png",
+        "image":"../images/properties8.png",
         
         "price":"R$ 3.100.000",
         
@@ -113,8 +113,6 @@
     }
     
 ]
-
-
 
 }
 
